@@ -1,0 +1,72 @@
+.site_footer {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    display: block;
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+    .container {
+        max-width: 1128px;
+        width: 100%;
+        margin: 0 auto;
+        .site_footer_inner {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 48px;
+            padding-bottom: 48px;
+            .site_footer_brand {
+                flex: none;
+                width: 100%;
+                display: inline-block;
+                justify-content: center;
+                margin-bottom: 24px;
+            }
+            .footer_link {
+                // flex: none;
+                width: 100%;
+                display: inline-flex;
+                justify-content: center;
+                flex: 1; 
+                justify-content: flex-end; 
+                li {
+                    margin-right: 20px; /* 간격 조절 */
+                }
+            }
+            .list_reset {
+                list-style: none;
+                padding: 0;
+            }
+            .footer_social_link {
+                flex: none;
+                width: 100%;
+                display: inline-flex;
+                justify-content: center;
+                li {
+                    display: inline-flex;
+                    a {
+                        padding: 8px;
+                    }
+                    .screen_reader_text {
+                        clip: rect(1px 1px 1px 1px);
+                        position: absolute !important;
+                        height: 1px;
+                        width: 1px;
+                        overflow: hidden;
+                        word-wrap: normal !important;
+                    }
+                }
+            }
+            .footer_copyright {
+                // flex: none;
+                width: 100%;
+                display: inline-flex;
+                justify-content: center;
+                flex: 1; /* 추가 */
+            justify-content: flex-start; /* 추가 */
+            }
+        }
+    }
+}   

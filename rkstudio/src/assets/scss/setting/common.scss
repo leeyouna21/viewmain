@@ -1,0 +1,23 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+    background: #ededed;
+}
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}

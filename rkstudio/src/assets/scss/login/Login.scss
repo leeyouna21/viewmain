@@ -1,0 +1,283 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+.page {
+    width: 100%;
+    height: 100vh;
+    background: #F1F1F5;
+    .login_header {
+        width: 100%;
+        height: 80px;
+        flex-shrink: 0;
+        background: #17245A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .inner_logo {
+            color: #fff;
+            font-family: Pretendard;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            // cursor: pointer;
+            position: absolute;
+            left: 260px;
+        }
+        .Inrending {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .About,
+            .Unlimited,
+            .Here,
+            .FAQ {
+                color: #fff;
+                font-family: Pretendard;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                cursor: pointer;
+                margin-left: 40px;
+                :last-child {
+                    margin-left: 0;
+                }
+            }
+        } 
+    }
+    .container {
+        width: 550px;
+        height: 650px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        border: 1px solid #F0F0F0;
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+        position: fixed;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h2 {
+            text-align: center;
+            color: #464646;
+            font-family: Pretendard;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px; /* 87.5% */
+            letter-spacing: -0.8px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .contentWrap {
+            margin: 0 auto;
+            width: 90%;
+            height: auto;
+            .inputTitle {
+                margin-bottom: 12px;
+                color: #464646;
+                font-family: Pretendard;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px; /* 100% */
+                letter-spacing: -0.4px;
+            }
+            .inputWrap {
+                input {
+                    padding-left: 10px;
+                    width: 100%;
+                    height: 64px;
+                    flex-shrink: 0;
+                    border-radius: 10px;
+                    border: 1px solid #F0F0F0;
+                    background: #F9FAFB;
+                    border: none;
+                    outline: none;
+            font-family: Pretendard;
+
+                }
+            }
+            .errorMessageWrap {
+                margin-top: 8px;
+                color: #ef0000;
+                font-size: 12px;
+                font-family: Pretendard;
+                font-style: normal;
+                font-weight: 400;
+            }
+            .how_wrap {
+                display: flex;
+                gap: 300px;
+                margin-top: 24px;
+                margin-bottom: 24px;
+                .passMaintain {
+                    display: flex;
+                    color: #464646;
+                    font-family: Pretendard;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                    letter-spacing: -0.4px;
+                    text-align: left;
+                    white-space: nowrap;
+                    .log_chekwrap {
+                        display: flex;
+                        input#loginState {
+                            display:none;
+                        }
+                            input#loginState + label {
+                                display: flex;
+                        }
+                            input#loginState + label:before {
+                            content:"";
+                            display:flex;
+                            width:20px;
+                            height:20px;
+                            background-size: cover;
+                            cursor:pointer;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M4.22222 22.5C3.61111 22.5 3.08815 22.2826 2.65333 21.8478C2.21852 21.413 2.00074 20.8896 2 20.2778V4.72222C2 4.11111 2.21778 3.58815 2.65333 3.15333C3.08889 2.71852 3.61185 2.50074 4.22222 2.5H19.7778C20.3889 2.5 20.9122 2.71778 21.3478 3.15333C21.7833 3.58889 22.0007 4.11185 22 4.72222V20.2778C22 20.8889 21.7826 21.4122 21.3478 21.8478C20.913 22.2833 20.3896 22.5007 19.7778 22.5H4.22222ZM4.22222 20.2778H19.7778V4.72222H4.22222V20.2778Z' fill='%23B2B2B2'/%3E%3C/svg%3E");
+                        }
+                            input#loginState:checked + label:before{
+                            content:"";
+                            cursor:pointer;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cpath d='M10.4444 17.1667L18.2778 9.33333L16.7222 7.77778L10.4444 14.0556L7.27778 10.8889L5.72222 12.4444L10.4444 17.1667ZM4.22222 22.5C3.61111 22.5 3.08815 22.2826 2.65333 21.8478C2.21852 21.413 2.00074 20.8896 2 20.2778V4.72222C2 4.11111 2.21778 3.58815 2.65333 3.15333C3.08889 2.71852 3.61185 2.50074 4.22222 2.5H19.7778C20.3889 2.5 20.9122 2.71778 21.3478 3.15333C21.7833 3.58889 22.0007 4.11185 22 4.72222V20.2778C22 20.8889 21.7826 21.4122 21.3478 21.8478C20.913 22.2833 20.3896 22.5007 19.7778 22.5H4.22222Z' fill='%234E70EC'/%3E%3C/svg%3E");  background-repeat: no-repeat;
+                        }
+                    }
+                }
+                .forgotPassword {
+                    color: #464646;
+                    font-family: Pretendard;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                    letter-spacing: -0.4px;
+                    text-align: right;
+                    white-space: nowrap;
+                }
+            }
+        }
+        .button_wrap {
+            margin: 0 auto;
+            width: 90%;
+            height: auto;
+            .bottomButton {
+                width: 100%;
+                height: 54px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                background: #1653CA;
+                box-shadow: 0px 2px 2px;
+                font-family: Pretendard;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 40px; /* 200% */
+                letter-spacing: -0.5px;
+                color: #fff;
+                border: none;
+                outline: none;
+                border:none; 
+                box-shadow:none; 
+                padding:0; 
+                overflow:visible; 
+                cursor:pointer;
+                margin-bottom: 24px;
+                
+            }
+            .sing_wrap {
+                display: flex;
+                flex-direction: row; 
+                align-items: center; 
+                justify-content: center; 
+                gap: 16px;
+                margin-bottom: 24px;
+                .sing_text {
+                    text-align: center;
+                    color: #999;
+                    font-family: Pretendard;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    // line-height: 24px; /* 133.333% */
+                    letter-spacing: -0.45px;
+                    white-space: nowrap;
+                }
+                .bottomButton1 {
+                    font-family: Pretendard;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    color: #1653CA;
+                    border: none;
+                    outline: none;
+                    border:none; 
+                    box-shadow:none; 
+                    padding:0; 
+                    overflow:visible; 
+                    cursor:pointer;
+                    background: none;
+                }
+            }
+            .or {
+                position: relative;
+                margin-bottom: 24px;
+                ::after{
+                    position:absolute;
+                    content:"";
+                    width: 234px;
+                    height:1px;
+                    background: #DBDBDB;
+                    left:0;
+                    bottom: 13px;
+                }
+                ::before {
+                    position: absolute;
+                    content: "";
+                    width: 234px; 
+                    height: 1px; 
+                    background: #DBDBDB;
+                    right: 0;
+                    bottom: 13px; 
+                }
+                h6 {
+                    color: #464646;
+                    font-family: Pretendard;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 150% */
+                    text-align: center;
+                    justify-content: center;
+                }
+            }
+            .bottomButton2 {
+                width: 100%;
+                height: 54px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                background: #FEE500;
+                box-shadow: 0px 2px 2px;
+                font-family: Pretendard;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 40px; /* 200% */
+                letter-spacing: -0.5px;
+                color: #000;
+                border: none;
+                outline: none;
+                border:none; 
+                box-shadow:none; 
+                padding:0; 
+                overflow:visible; 
+                cursor:pointer
+            }
+        }
+    }
+}
+
+        

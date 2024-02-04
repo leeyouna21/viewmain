@@ -1,0 +1,26 @@
+.setting_main {
+    font-family: 'NanumSquareNeo';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    min-width: 500px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #f7f7f7;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    .set_left {
+        width: 20%;
+        height: auto;
+        background: #ededed;
+    }
+    .set_right {
+        width: 80%;
+        height: auto;
+        display: flex; 
+        flex-direction: column;
+    }
+}

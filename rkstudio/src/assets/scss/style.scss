@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+//common scss
+@import "setting/common";
+@import "setting/_fonts";
+
+// 랜더링
+//랜더링 header
+@import "rendering/Header";
+//랜더링 desc
+@import "rendering/Desc";
+//랜더링 Price
+@import "rendering/Price";
+//랜더링 cta
+@import "rendering/Cta";
+//랜더링 footer
+@import "rendering/Footer";
+
+//로그인
+//로그인 메인
+@import "login/Login";
+//로그인 회원가입
+@import "login/Singup";
+//로그인 비밀번호 찾기
+@import "login/Forgotpw";
+
+//Gpt
+@import "Gpt/Gpt";
+//Gpt setting
+@import "Gpt/Setting";
+//Gpt Profile
+@import "Gpt/Profile";
+@import "Gpt/ProModify";
+@import "Gpt/Plan";
+@import "Gpt/toggleSwitch";
+@import "Gpt/Calender";
+

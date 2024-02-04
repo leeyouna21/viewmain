@@ -1,0 +1,80 @@
+.for_page {
+        font-family: 'NanumSquareNeo';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        min-width: 500px;
+        padding: 0 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background: #f7f7f7;
+        overflow: hidden;
+        flex-direction: column;
+    .for_container {
+        // padding-top: 50px;
+        max-width: 550px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 100px;
+        .for_title {
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+        .for_desc {
+            font-size: 20px;
+            color: #4f4f4f;
+            margin-bottom: 50px;
+        }
+        .for_inner {
+            width: 100%;
+            .for_contentWrap {
+                .for_inputTitle {
+                    .for_inputWrap {
+                        .for_input {
+                            label {
+                                input {
+                                    border-radius: 64px;
+                                    width: 100%;
+                                    height: 48px;
+                                    color: black;
+                                    border: none;
+                                    font-weight: 700;
+                                    background: #dfdfdf;
+                                    margin-bottom: 6px;
+                                    &::placeholder {
+                                        color: rgb(87, 87, 87); 
+                                        padding-left: 20px;
+                                        border: none;
+                                        font-family: 'NanumSquareNeo';
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .for_info {
+            font-size: 13px;
+            color: #4f4f4f;
+        }
+        .bottomButton1 {
+            button {
+                width: 100%;
+                height: 48px;
+                border-radius: 64px;
+                border: none;
+                font-weight: 700;
+                background: #9e30f4;
+                color: #fff;
+                margin-bottom: 16px;
+                margin-top: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    
+}

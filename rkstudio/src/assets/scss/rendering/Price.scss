@@ -1,0 +1,144 @@
+.Price {
+    width: 100%;
+    height: 1080px;
+    // background: url('../../images/lendingHeader.png') center center/cover;
+    // background-position: 0 0;
+    .container {
+        max-width: 1128px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 6.9444vw;
+        h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+        .pricing_wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-right: -12px;
+            margin-left: -12px;
+            .pricing_table {
+                position: relative;
+                padding: 12px;
+                width: 368px;
+                max-width: 368px;
+                flex-grow: 1;
+                // ::before {
+                //     content: '';
+                //     position: absolute;
+                //     left: 50%;
+                //     width: 200%;
+                //     max-width: 200%;
+                //     height: 435px;
+                //     background-repeat: no-repeat;
+                //     background-position: center;
+                //     background-size: 100%;
+                //     bottom: 18.8%;
+                //     transform: translateX(-50%);
+                // }
+                .pricing_table_inner {
+                    margin-top: 50px;
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    background: #fff;
+                    padding: 24px;
+                    height: 90%;
+                    ::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        mix-blend-mode: multiply;
+                    }
+                    .pricing_table_main {
+                        position: relative;
+                        width: 100%;
+                    }
+                    .pricing_table_header {
+                        border-bottom: 1px solid rgba(138,148,167,0.24);
+
+                    }
+                    .pricing_table_price {
+                        color: #000;
+                        margin-bottom: 20px;
+                        .price_dollar {
+                            font-size: 40px;
+                            font-weight: bold;
+                            color: #696969;
+                        }
+                        .price_amount {
+                            font-size: 50px;
+                            font-weight: bold;
+                        }
+                        .price_month {
+                            font-size: 20px;
+                            // line-height: 24;
+                            letter-spacing: -0.1px;
+                        }
+                    }
+                    .pricing_title {
+                        color: #000;
+                        font-weight: 700;
+                        font-size: 14px;
+                        margin-top: 32px;
+                        letter-spacing: -0.1px;
+                        ul {
+                            list-style:none;
+                            padding: 0;
+                            font-size: 16px;
+                            // line-height: 24;
+                            letter-spacing: -0.1px;
+                            margin-top: 32px;
+                            border-top: 1px solid rgba(138,148,167,0.24);
+                            li{
+                                display: flex;
+                                align-items: center;
+                                padding: 14px 0;
+                                border-bottom: 1px solid rgba(138,148,167,0.24);
+                                font-weight: lighter;
+                                position: relative;
+                                padding-left: 25px;
+                                font-size: 16px;
+                                ::before {
+                                    content: '';
+                                    width: 16px;
+                                    height: 12px;
+                                    margin-right: 16px;
+                                    background-repeat: no-repeat;
+                                    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUuNiA2LjRMMS42IDQgMCA1LjYgNS42IDEyIDE2IDEuNiAxNC40IDB6IiBmaWxsPSIjMDJDQkIxIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);
+                                    position: absolute;
+                                    left: 0px;
+                                    top: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .pricing_button {
+                        .rendPri_btn {
+                          margin-top: 32px;
+                          width: 16.2778vw;
+                          height: 3.1667vw;
+                          background: #000;
+                          color: #fff;
+                          font-size: 18px;
+                          border-radius: 2.0833vw;
+                          cursor: pointer;
+                        }
+                      }
+                      
+                      
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,194 @@
+.proModify_main {
+    font-family: 'NanumSquareNeo';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    min-width: 500px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #f7f7f7;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    .pro_left {
+        width: 20%;
+        height: auto;
+        background: #ededed;
+        display: flex;
+        justify-content: center; /* 수평 가운데 정렬 */
+        align-items: center; /* 수직 가운데 정렬 */
+        
+        .left_inner {
+            width: 70%;
+            height: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column; /* 내부 요소들을 수직으로 배치 */
+            h3 {
+                font-size: 15px;
+                color: rgb(48, 48, 48)
+            }
+            .option_1 {
+                width: 100%;
+                .proModify_wrap {
+                    margin-top: 10px;
+                    border-radius: 10px;
+                    height: 50px;
+                    display: flex;
+                    position: relative;
+                    align-items: center; /* 수직 가운데 정렬 */
+                    background: #B1C2FF;
+                    
+                    ::before {
+                        margin-left: 20px;
+                        content: '';
+                        display: inline-block;
+                        width: 30px; /* 이미지를 오른쪽으로 이동시킬 크기 */
+                        height: 30px; /* 이미지의 높이 */
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-user-circle' width='30' height='30' viewBox='0 0 24 24' stroke-width='1.5' stroke='%232c3e50' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0' /%3E%3Cpath d='M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0' /%3E%3Cpath d='M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855' /%3E%3C/svg%3E");
+                        vertical-align: middle;
+                        margin-right: 10px; 
+                    }
+                    .proModify_text {
+                        font-size: 17px;
+                        font-weight: bold;
+                    }
+                }
+                .general_wrap {
+                    // margin-top: 50px;
+                    border-radius: 10px;
+                    height: 50px;
+                    display: flex;
+                    position: relative;
+                    align-items: center; /* 수직 가운데 정렬 */
+                    ::before {
+                        margin-left: 20px;
+                        content: '';
+                        display: inline-block;
+                        width: 30px; /* 이미지를 오른쪽으로 이동시킬 크기 */
+                        height: 30px; /* 이미지의 높이 */
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z' /%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M15 12a3 3 0 11-6 0 3 3 0 016 0z' /%3E%3C/svg%3E%0A");                        vertical-align: middle;
+                        margin-right: 10px;  
+                    }
+                    .general_text {
+                        font-size: 17px;
+                        font-weight: bold;
+                    }
+                }
+                .plan_wrap {
+                    border-radius: 10px;
+                    height: 50px;
+                    display: flex;
+                    position: relative;
+                    align-items: center; /* 수직 가운데 정렬 */
+                    ::before {
+                        margin-left: 20px;
+                        content: '';
+                        display: inline-block;
+                        width: 30px; /* 이미지를 오른쪽으로 이동시킬 크기 */
+                        height: 30px; /* 이미지의 높이 */
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-calendar-plus' width='44' height='44' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23000000' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M12.5 21h-6.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5' /%3E%3Cpath d='M16 3v4' /%3E%3Cpath d='M8 3v4' /%3E%3Cpath d='M4 11h16' /%3E%3Cpath d='M16 19h6' /%3E%3Cpath d='M19 16v6' /%3E%3C/svg%3E");
+                        vertical-align: middle;
+                        margin-right: 10px;
+                    }
+                    .plan_text {
+                        font-size: 17px;
+                        font-weight: bold;
+                    }
+                }                
+            }
+        }
+    }
+    .pro_right {
+        width: 80%;
+        height: 900px;
+        display: flex; 
+        flex-direction: column;
+        .pro_container {
+            width: 70%;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 150px;
+            h4 {
+            
+            }
+            .edit_wrap {  
+                display: flex;
+                gap: 20px;
+                margin-top: 20px;
+                margin: 0 auto;
+                p {
+                    // flex-basis: calc(50% - 10px); 
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                label {
+                    input {
+                        width: 400px;
+                        height: 40px;
+                        border: none;
+                        box-shadow: 5px 5px 5px rgba(107, 107, 107, 0.3); 
+                        border-radius: 10px;     
+                        &:focus {
+                            outline: none;
+                        }                    
+                    }
+                }
+            }
+            .edit_wrap2 {
+                display: flex;
+                gap: 20px;
+                margin-top: 20px;
+                p {
+                    // flex-basis: calc(50% - 10px); 
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                label {
+                    input {
+                        width: 400px;
+                        height: 40px;
+                        border: none;
+                        box-shadow: 5px 5px 5px rgba(107, 107, 107, 0.3);
+                        border-radius: 10px;  
+                        &:focus {
+                            outline: none;
+                        }                             
+                    }
+                }
+            }
+        }
+        .proModify_btn {
+            display: flex;
+            justify-content: flex-end; /* 버튼을 오른쪽으로 정렬합니다. */
+            margin: 0 auto;
+            margin-top: 150px;
+            width: 70%;
+            button {
+                width: 80px;
+                height: 50px;
+                background: #e6e6e6;
+                border: none;
+                cursor: pointer;
+                margin: 0 10px 0 0; /* 오른쪽 여백 추가 */
+                border-radius: 10px;
+                &:hover {
+                    background: #dddddd;
+                }
+            }
+        }
+    }
+}    
